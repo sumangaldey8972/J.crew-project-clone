@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #checkout_container {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        width: 18%;
+        padding: 8px;
+    }
+
+    #checkout_item_div {
+        /* border: 2px solid green; */
+        display: flex;
+        gap: 100px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #checkout_estimated_div {
+        /* border: 2px solid yellowgreen; */
+        display: flex;
+        gap: 50px;
+        line-height: 12px;
+    }
+
+    .estimated_text {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .shipping_text {
+        /* border: 2px solid pink; */
+        width: 70%;
+        font-size: 12px;
+        color: grey;
+        position: relative;
+        top: -5px;
+    }
+
+    .inr_text {
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        left: 28px;
+    }
+
+    .amount_text {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #checkout_btn {
+        padding: 0.75rem 0.625rem;
+        border: 0;
+        /* display: inline-block; */
+        font-size: 0.875rem;
+        font-weight: 700;
+        height: 3.125rem;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+        cursor: pointer;
+        background: #0161ff;
+        color: white;
+    }
+
+    .delaration_text {
+        font-size: 12px;
+        /* border: 2px solid red; */
+        width: 88%;
+        margin: auto;
+        margin-top: 20px;
+        color: grey;
+    }
+
+    .promo_text {
+        font-size: 14px;
+        letter-spacing: 0.12em;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    #promo {
+        padding: 12px 0px 12px 9px;
+        border: 1px solid grey;
+        background: transparent;
+        outline: none;
+    }
+
+    #apply_btn {
+        margin-left: 12px;
+        background-color: #ddd;
+        color: #aaa;
+        font-size: 12px;
+        font-weight: 700;
+        height: 44px;
+        letter-spacing: 1.5px;
+        min-width: 78px;
+        padding: 12px 18px;
+        width: auto;
+        border: 2px solid #ddd;
+        position: relative;
+        top: -43px;
+        left: 171px;
+    }
+</style>
+
+<body>
+    <div id="checkout_container">
+        <div id="checkout_item_div">
+            <p>Item subtotal</p>
+            <p>INR 29714.00</p>
+        </div>
+
+        <div id="checkout_estimated_div">
+            <div>
+                <p class="estimated_text">Estimated Total</p>
+                <p class="shipping_text">Shipping calculated in Checkout</p>
+            </div>
+
+            <div>
+                <p class="inr_text">INR</p>
+                <p class="amount_text">29714.00</p>
+            </div>
+        </div>
+
+        <button id="checkout_btn">Check out now</button>
+
+        <p class="delaration_text">By clicking 'Check out now', you will be redirected to the eShopWorld Checkout page
+            where payment will be
+            taken and your order fulfilled by eShopWorld, J.Crew's preffered partner for international sales</p>
+
+        <p class="promo_text">Add a Promo</p>
+
+        <input type="text" placeholder="Promo" id="promo">
+        <button id="apply_btn">APPLY</button>
+
+    </div>
+</body>
+
+</html>

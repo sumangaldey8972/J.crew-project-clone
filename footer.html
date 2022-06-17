@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #footer_container {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-around;
+        background: #f0f1f2;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #footer_container_left_div {
+        margin-top: 40px;
+        /* border: 2px solid green; */
+        display: flex;
+        /* padding: 30px; */
+        font-size: 13px;
+    }
+
+    #footer_container_left_div>div {
+        /* border: 2px solid yellow; */
+        padding: 20px;
+        line-height: 28px;
+    }
+
+    #footer_container_inside_div {
+        width: 28%;
+    }
+
+    .footer_container_first_para {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+     #footer_container > div > div >p:hover {
+        border-bottom: 2px solid black;
+        cursor: pointer;
+    }
+
+    #footer_container_right_div {
+        margin-top: 40px;
+    }
+
+    #font_container {
+        /* border: 2px solid red; */
+        background: #f0f1f2;
+
+    }
+
+    #font_container_div {
+        /* border: 2px solid green; */
+        font-size: 25px;
+        width: 40%;
+    }
+
+    #font_container_div>i {
+        padding-left: 23px;
+    }
+
+    #india_div {
+        /* border: 2px solid hotpink; */
+        width: 15%;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #india_div>span {
+        text-decoration: underline;
+    }
+
+    span>i {
+        padding-left: 10px;
+    }
+
+    #footer_logo_div {
+        margin-left: 30px;
+    }
+
+    .madwelllogo {
+        width: 76px;
+        height: 83px;
+        background: transparent;
+    }
+
+    .jcrewlogo {
+        width: 90px;
+        height: 30px;
+        position: relative;
+        top: -30px;
+        left: 35px;
+    }
+
+    .copyright {
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    #footer_first_div {
+        display: flex;
+        margin: 10px 567.675px;
+        justify-content: space-between;
+    }
+
+    .like_class {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .input {
+        border: none;
+        font-size: 16px;
+        padding: 12px 0 0 9px;
+        outline: 0;
+        color: #000;
+        width: 100%;
+        height: 25px;
+        letter-spacing: .3px;
+        font-weight: 400;
+        overflow: hidden;
+    }
+
+    #signup {
+        height: 36px;
+        padding: 0 12px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #fff;
+        background-color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        top: -37px;
+        left: 279px;
+    }
+</style>
+
+<body>
+
+    <div id="footer_first_div">
+        <div>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span>@jcrew_help</span>
+        </div>
+
+        <div>
+            <span id="flag_icon"><i class="fa-solid fa-phone"></i></span>
+            <span>1 434 385 5775</span>
+        </div>
+
+        <div>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <span>Email Us</span>
+        </div>
+    </div>
+
+    <div id="footer_container">
+        <div id="footer_container_left_div">
+            <div>
+                <p class="footer_container_first_para">Help</p>
+                <p>Customer Service</p>
+                <p>Track Order</p>
+                <p>Returns & Exchange</p>
+                <p>Shipping</p>
+                <p>International Orders</p>
+                <p>Cotact Us</p>
+            </div>
+
+            <div>
+                <p class="footer_container_first_para">Quick Links</p>
+                <p>Find a Store</p>
+                <p>Size Charts</p>
+                <p>Offers & Promotions</p>
+            </div>
+
+            <div id="footer_container_inside_div">
+                <p class="footer_container_first_para">About J.Crew</p>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Social Responsiblity</p>
+                <p>California Transparency Act/Modern Slavery Act</p>
+                <p>Investors Relations</p>
+                <p>Terms Of Use</p>
+                <p>Privacy Policy</p>
+                <p>California Do Not Sell My Personal Information</p>
+                <p>Diversity, Equity and Inclusion at J.Crew Group</p>
+            </div>
+        </div>
+        <div id="footer_container_right_div">
+            <p class="like_class">Like Being First?</p>
+            <p>Get can't-miss style news, before everybody else.</p>
+            <input type="text" placeholder="Enter your email" class="input">
+            <button id="signup">signup</button>
+        </div>
+    </div>
+
+    <div id="font_container">
+        <div id="font_container_div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <div id="india_div">
+            <span>INDIA</span>
+            <span><i class="fa-solid fa-flag"></i></span>
+        </div>
+
+        <div id="footer_logo_div">
+            <img src="/madwell logo.png" alt="" class="madwelllogo">
+
+            <img src="/jcrew logo.png" alt="" class="jcrewlogo">
+        </div>
+
+        <div class="copyright">
+            <p>© 2022 J.Crew</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar {
+        border: 1px solid rgb(213, 211, 211);
+        display: flex;
+        margin: 0px 39.6px;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+;
+    }
+
+    #navbar_mid_div {
+        /* border: 2px solid black; */
+        display: flex;
+        padding-left: 40px;
+        gap: 40px;
+        /* padding-right: 50px; */
+    }
+
+    #navbar_mid_div >p{
+        padding-top: 10px;
+        font-weight: 500;
+    }
+
+    .jcrew_main_logo {
+        padding-top: 10px;
+        width: 114.24px;
+        height: 26.91px;
+    }
+
+    #navbar_last_div {
+        padding-left: 50px;
+        display: flex;
+        gap: 30px;
+    }
+
+    #search_jcrew {
+        position: relative;
+        padding: 0 0 2px 36px;
+        border: 1px solid #ccc;
+        width: 180px;
+        height: 36px;
+        background: #fff;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: .3px;
+        transition: width .1s ease-in-out, color .1s ease-in-out;
+        -webkit-appearance: none;
+    }
+
+    #navbar_sign_div{
+        /* border: 2px solid red; */
+        padding-top: 10px;
+        display: flex;
+        gap: 50px;
+    }
+    #navbar_sign_div > span > i{
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <div>
+            <img src="/jcrew logo main.png" alt="" class="jcrew_main_logo">
+        </div>
+
+        <div id="navbar_mid_div">
+            <p>New</p>
+            <p>Women</p>
+            <p>Men</p>
+            <p>Kids</p>
+            <p>Swim</p>
+            <p>Cashmere</p>
+            <p>Home</p>
+            <p>Stories</p>
+            <p style="color: red;">Sale</p>
+        </div>
+
+        <div id="navbar_last_div">
+            <input type="text" placeholder="Search J.Crew" id="search_jcrew">
+
+            <div id="navbar_sign_div">
+                <p>Sign In</p>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first_p_tag {
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(86, 84, 84);
+}
+
+#main_container {
+    background-color: #f8f8f8;
+}
+
+#shopping_div {
+    margin-top: 30px;
+    width: 66%;
+    margin-left: 311px;
+    height: auto;
+    margin-bottom: 40px;
+    box-shadow: rgba(180, 187, 189, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background: white;
+}
+
+#shopping_head_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shopping_head_div>h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 7px 0px 7px 0px;
+    margin-left: 10px;
+}
+
+/* #cart_items {
+    border: 2px solid rgb(220, 182, 28);
+
+} */
+
+#cart_items>p {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#cartdiv {
+    border: 2px solid;
+    display: flex;
+    position: relative;
+    top: -91px;
+}
+
+.items {
+    /* color: red; */
+    padding-right: 57%;
+    padding-left: 2%;
+}
+
+.price {
+    /* color: green; */
+    padding-right: 86px;
+    padding-left: 30px;
+}
+
+#items {
+    /* border: 2px solid red; */
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* position: relative;
+    top: -92px; */
+}
+
+/* #items>div {
+    border: 2px solid black;
+} */
+
+#items>div>img {
+    width: 120px;
+    height: 120px;
+}
+
+#items_details>p {
+    /* border: 2px solid green; */
+    margin-bottom: 50px;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+#remove {
+    color: grey;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+#items_appen {
+    position: relative;
+    top: 10px;
+    left: -6px;
+}
+
+/* checkout contianer styles */
+
+#checkout_container {
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    width: 21%;
+    padding: 8px;
+    margin-left: 125px;
+    margin-top: 33px;
+    height: 341px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* done till here ================================================================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#checkout_item_div {
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 174px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#checkout_estimated_div {
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    gap: 108px;
+    line-height: 12px;
+    margin-bottom: 52px;
+}
+
+.estimated_text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.shipping_text {
+    /* border: 2px solid pink; */
+    width: 70%;
+    font-size: 12px;
+    color: grey;
+    position: relative;
+    top: 5px;
+}
+
+.inr_text {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    left: 12px;
+}
+
+.amount_text {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+}
+
+#checkout_btn {
+    padding: 0.75rem 0.625rem;
+    border: 0;
+    /* display: inline-block; */
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 3.125rem;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    cursor: pointer;
+    background: #0161ff;
+    color: white;
+}
+
+.delaration_text {
+    font-size: 12px;
+    /* border: 2px solid red; */
+    width: 88%;
+    margin: auto;
+    margin-top: 20px;
+    color: grey;
+    margin-bottom: 16px;
+}
+
+.promo_text {
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+#promo {
+    padding: 12px 0px 12px 9px;
+    border: 1px solid grey;
+    background: transparent;
+    outline: none;
+}
+
+#apply_btn {
+    margin-left: 12px;
+    background-color: #ddd;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 700;
+    height: 44px;
+    letter-spacing: 1.5px;
+    min-width: 78px;
+    padding: 12px 18px;
+    width: auto;
+    border: 2px solid #ddd;
+    /* position: relative;
+    top: -43px;
+    left: 171px; */
+}
+
+.cartpage_main_container {
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: #f8f8f8;
+
+}

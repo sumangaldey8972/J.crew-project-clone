@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Creation</title>
+</head>
+
+<body>
+    <h2>Add Product</h2>
+    <input type="text" placeholder="Id" id="id"><br>
+    <input type="url" placeholder="Image" id="image"><br>
+    <input type="text" placeholder="Name" id="name"><br>
+    <input type="text" placeholder="Price" id="price"><br>
+    <button onclick="submitFun()">Submit</button>
+</body>
+
+</html>
+
+<script>
+    async function submitFun() {
+        console.log("hi");
+        const productData = {
+            id: document.getElementById("id").value,
+            image: document.getElementById("image").value,
+            name: document.getElementById("name").value,
+            price: document.getElementById("price").value,
+        };
+        console.log(productData);
+
+        let response = await fetch(`http://localhost:5001/api/product`, {
+            method: "POST",
+            body: JSON.stringify(productData),
+            headers: { 'content-type': 'application/json' },
+        });
+
+        let data = await response.json();
+    }
+</script>

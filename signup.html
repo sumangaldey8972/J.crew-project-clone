@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #container {
+        /* border: 2px solid red; */
+        text-align: center;
+        width: 24%;
+        margin: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+    }
+
+    h2 {
+        margin: auto;
+        /* border: 2px solid black; */
+        padding: 20px;
+    }
+
+    .input {
+        width: 325px;
+        height: 42px;
+        padding: 12px 0px 0px 9px;
+        border: 1px solid rgb(172, 172, 172);
+    }
+
+    #input_div {
+        /* border: 2px solid green; */
+        line-height: 70px;
+    }
+
+    select {
+        width: 339px;
+        height: 61px;
+    }
+
+    #checkbox_div_first_child {
+        /* border: 2px solid blue; */
+        display: flex;
+        /* border:2px solid red; */
+        margin-left: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #checkbox_div_first_child>input {
+        position: relative;
+        top: 2px;
+        left: -4px;
+    }
+
+    #submit {
+        display: block;
+        height: 44px;
+        width: 94%;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #fff;
+        background-color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #declaration_div {
+        /* border: 2px solid khaki; */
+        text-align: start;
+        width: 96%;
+        margin: auto;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    #last_div {
+        /* border: 2px solid darkmagenta; */
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 117px;
+        margin-top: 30px;
+        padding: 0px 0px 70px 0px;
+    }
+
+    hr {
+        /* border-top: 2px solid #000; */
+        color: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div id="container">
+        <h2>Sign In</h2>
+
+        <div id="input_div">
+            <input type="email" placeholder="Email Address*" id="email" class="input"><br>
+            <input type="password" placeholder="password*" id="password" class="input"><br>
+            <select id="countries">
+                <option value="">India</option>
+                <option value="">United States</option>
+                <option value="">China</option>
+                <option value="">New Zealand</option>
+                <option value="">London</option>
+            </select>
+        </div>
+
+
+        <div id="checkbox_div">
+            <div id="checkbox_div_first_child">
+                <input type="checkbox" id="check">
+                <p>Remember me</p>
+            </div>
+        </div>
+
+        <button id="submit">create an Account</button>
+
+        <div id="declaration_div">
+            <p>By clicking "Create an Account", you agree to our Terms of Use and , including the Use of Cookies and the
+                transfer of your personal information to the United States, a jurisdiction that may not provide an
+                equivalent level of data protection to the laws in your home country.</p>
+        </div>
+
+        <hr>
+
+        <div id="last_div">
+            <p>Already have an account?</p>
+            <p style="color:#4484ff;"> <a href="signin.html">Sign In</a></p>
+        </div>
+    </div>
+    <hr>
+    <div id="footer"></div>
+</body>
+
+</html>
+
+<script type="module">
+
+    import navbar from "../components/navbar.js"
+    import footer from "../components/footer.js"
+    document.getElementById("navbar").innerHTML = navbar();
+    document.getElementById("footer").innerHTML = footer();
+
+    let userArr = JSON.parse(localStorage.getItem("user")) || [];
+    function submitFun() {
+        let userData = {
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+        };
+
+        userArr.push(userData);
+
+        localStorage.setItem("user", JSON.stringify(userArr));
+
+        alert("sign Up Sucessfull")
+
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+    }
+
+    document.getElementById("submit").addEventListener("click", submitFun)
+
+
+</script>

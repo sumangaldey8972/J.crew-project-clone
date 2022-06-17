@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.p {
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#product_container {
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#product_container>div {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+#product_container>div>img {
+    width: 334px;
+    height: 445px;
+}
+
+#product_container>div>p {
+    margin-left: -155px;
+}
+
+#second_container {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 93%;
+    margin: auto;
+}
+
+#second_container>div {
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 11px;
+}
+
+#second_container>div>img {
+    width: 215px;
+    height: 215px;
+}
+
+#section {
+    /* border: 2px solid green; */
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    font-size: .6875rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 25px 0px 35px 0px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+}
+
+#image_div {
+    display: flex;
+    width: 92%;
+    margin: auto;
+}
+
+#image_div>img {
+    width: 696px;
+    height: 881px;
+    text-align: center;
+}
